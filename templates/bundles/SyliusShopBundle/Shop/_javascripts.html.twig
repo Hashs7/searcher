@@ -1,0 +1,11 @@
+<script src="{{ asset('bundles/bazingajstranslation/js/translator.min.js') }}"></script>
+<script src="{{ asset('bundles/fosjsrouting/js/router.min.js') }}"></script>
+{#<script src="{{ path('fos_js_routing_js', { callback: 'fos.Router.setData' }) }}"></script>#}
+{% if app.environment == 'dev' %}
+{#    <script src="{{ asset('shop.js', 'resources') }}"></script>#}
+    <script src="{{ asset('search.js', 'resources') }}"></script>
+    <script src="{{ asset('runtime.js', 'resources') }}"></script>
+{% else %}
+{#    <script src="{{ asset('bundles/app/shop.min.js') }}"></script>#}
+    <script src="{{ asset('bundles/app/search.min.js') }}"></script>
+{% endif %}

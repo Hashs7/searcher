@@ -1,0 +1,13 @@
+# Read the documentation: https://github.com/FriendsOfSymfony/FOSElasticaBundle/blob/master/Resources/doc/setup.md
+fos_elastica:
+    clients:
+        default: { host: localhost, port: 9200 }
+    indexes:
+        bitbag_attribute_taxons:
+            types:
+                default:
+                    persistence:
+                        listener:
+                            insert: true
+                            update: false
+                            delete: true

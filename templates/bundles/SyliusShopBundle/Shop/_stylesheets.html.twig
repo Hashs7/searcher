@@ -1,0 +1,10 @@
+<link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css">
+{% if app.environment == 'dev' %}
+{#    <link rel="stylesheet" href="{{ asset('shop.css', 'resources') }}">#}
+    <link rel="stylesheet" href="{{ asset('search.css', 'resources') }}">
+{#    <link rel="stylesheet" href="{{ asset('style.css', 'resources') }}" type="text/css">#}
+{% else %}
+{#    <link rel="stylesheet" href="{{ asset('bundles/app/shop.min.css') }}">#}
+    <link rel="stylesheet" href="{{ asset('bundles/app/search.min.css') }}">
+{#    <link rel="stylesheet" href="{{ asset('bundles/app/style.min.css') }}" type="text/css">#}
+{% endif %}

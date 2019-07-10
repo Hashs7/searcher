@@ -1,0 +1,13 @@
+{
+  "entrypoints": {
+    "search": {
+      "js": [
+        "http://localhost:8080/build/runtime.js",
+        "http://localhost:8080/build/search.js"
+      ],
+      "css": [
+        "http://localhost:8080/build/search.css"
+      ]
+    }
+  }
+}

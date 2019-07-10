@@ -1,0 +1,5 @@
+{
+  "public/runtime.js": "http://localhost:8080/build/runtime.js",
+  "public/search.css": "http://localhost:8080/build/search.css",
+  "public/search.js": "http://localhost:8080/build/search.js"
+}

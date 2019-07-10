@@ -1,0 +1,16 @@
+<div class="ui basic segment">
+    <div id="search-root"></div>
+</div>
+<div class="ui basic segment">
+    <div class="ui three column stackable grid">
+        <div class="column">
+            <a href="{{ path('sylius_shop_homepage') }}"><img src="{{ asset('/bundles/app/images/univers-du-pro-logo.jpg') }}" alt="Sylius logo" class="ui small image" style="background-color: black" /></a>
+        </div>
+        <div class="column">
+            {{ sonata_block_render_event('sylius.shop.layout.header') }}
+        </div>
+        <div class="right aligned column">
+            {{ render(url('sylius_shop_partial_cart_summary', {'template': '@SyliusShop/Cart/_widget.html.twig'})) }}
+        </div>
+    </div>
+</div>

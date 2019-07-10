@@ -1,0 +1,5 @@
+framework:
+  assets:
+    packages:
+      resources:
+        base_urls: '%env(DEV_RESOURCES_URL)%'
